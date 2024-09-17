@@ -108,7 +108,7 @@
 * ```func WrapCore(f func(zapcore.Core) zapcore.Core) Option```
 ## Sink
 * defines the interface to write to and close logger destinations.
-```
+```go
 type Sink interface {
 	zapcore.WriteSyncer
 	io.Closer
